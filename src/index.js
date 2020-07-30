@@ -11,6 +11,8 @@ function configurarJuego() {
   manejarEventos($tablero);
 }
 
+// con esta funcion, le damos funcionalidad a los cuadros:
+
 function manejarEventos($tablero) {
 
   // $cuadros.forEach(function($cuadro){
@@ -32,11 +34,14 @@ function configurarCuadros($cuadros, colores) {
     return 0.5 - Math.random();
   });
 
+  
+
   coloresRandom.forEach(function(color, i) {
     $cuadros[i].classList.add(color);
   });
 }
 
+// esta funcion hace la magia de mostrar los cuadros de colores.
 function manejarClickCuadro($cuadroActual) {
   mostrarCuadro($cuadroActual);
 
